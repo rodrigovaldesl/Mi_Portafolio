@@ -1,0 +1,138 @@
+body{
+    margin: 0rem;
+    padding: 0rem;
+    border: 0rem;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+/* NAV BAR */
+nav{
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  letter-spacing: 0.09rem;
+}
+
+nav img{
+  width: auto;
+  height: 20px;
+}
+
+/* HEADER */
+
+header {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.8;
+  z-index: 1;
+}
+
+header h1{
+  font-weight: 700!important;
+  font-size: 3rem!important;
+  letter-spacing: 3rem!important;
+  font-family: 'Poppins', sans-serif;
+}
+
+header p{
+  font-family: 'Lato', sans-serif!important;
+  font-weight: 400!important;
+  font-size: 0.75rem!important;
+  letter-spacing: 1rem!important;
+  line-height: 2rem!important;
+}
+
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url(../img/bg-header.jpg) black no-repeat center center scroll;
+    height: 100vh;
+   
+  }
+  header video {
+    display: none;
+  }
+
+  header p{
+    font-family: 'Lato', sans-serif!important;
+    font-weight: 400!important;
+    font-size: 2rem!important;
+    letter-spacing: 1rem!important;
+    line-height: 3rem!important;
+  }
+}
+
+/* SLIDER */
+.carousel-indicators {
+  bottom: -500px;
+}
+
+.carousel-indicators .active {
+  background-color: black;
+}
+
+.carousel-indicators li {
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 50%)
+}
+
+.alineado__vertical{
+  display: flex;
+  align-items: center;
+}
+
+/* FOOTER */
+footer{
+  background-color: rgba(30, 30, 30, 0.97);
+  color: #777777;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+}
+
+footer i{
+  color: white;
+}
+
+.hola{
+  background-color: blueviolet;
+  height: 1000px;
+}

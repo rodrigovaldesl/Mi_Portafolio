@@ -1,22 +1,246 @@
 <!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<html lang="es">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <title>Rodrigo Valdes</title>
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Tipografías -->
+  <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,800,900&display=swap" rel="stylesheet">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/6a623f2033.js" crossorigin="anonymous"></script>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-  </body>
+  <title>Rodrigo Valdes</title>
+  <link rel="shortcut icon" href="assets/img/favicon.png">
+</head>
+
+<body>
+  <!-- NAV BAR -->
+  <nav id="navbar" class="navbar navbar-expand-lg navbar-light bg-light sticky-top text-uppercase">
+    <div class="container">
+      <a class="navbar-brand" href="navbar"><img class="" src="assets/img/logo.png" alt="Home"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link mr-3" href="#hola">Sobre Mi<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-3" href="#experiencia">Experiencia</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link mx-3" href="#Portafolio">Portafolio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link ml-3" href="#contacto">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HEADER -->
+  <header>
+    <div class="overlay"></div>
+    <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+      <source src="assets/img/video.mp4" type="video/mp4">
+    </video>
+    <!-- <div class="container h-100">
+      <div class="d-flex h-100 text-center align-items-center">
+        <div class="w-100 text-white">
+          <h1 class="display-3 text-uppercase">Rodrigo</h1>
+          <p class="lead mb-0 text-uppercase">Diseño / Moda / Medios</p>
+        </div>
+      </div>
+    </div> -->
+  </header>
+
+
+
+  <!-- SLIDER -->
+  <section class="container d-none d-sm-none d-md-block">
+    <!-- CODIGO SLIDER -->
+    <div id="carouselExampleIndicators" class="carousel slide my-5" data-ride="carousel">
+      <!-- <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      </ol> -->
+      <div class="carousel-inner">
+        <!-- SLIDE 1 -->
+        <div class="carousel-item active">
+          <div class="row">
+            <div class="col-3 alineado__vertical "><img src="assets/img/sml.png" class="p-5 d-block w-100"
+                alt="Revista SML"></div>
+            <div class="col-3 alineado__vertical"><img src="assets/img/Ripley.png" class="p-5 d-block w-100"
+                alt="Ripley"></div>
+            <div class="col-3 alineado__vertical"><img src="assets/img/falabella.png" class="p-5 d-block w-100"
+                alt="Falabella"></div>
+            <div class="col-3 alineado__vertical"><img src="assets/img/asics.png" class="p-5 d-block w-100"
+                alt="ASICS Chile"></div>
+          </div>
+        </div>
+        <!-- SLIDE 1 -->
+        <!-- SLIDE 2 -->
+        <div class="carousel-item">
+          <div class="row">
+            <div class="col-3 alineado__vertical "><img src="assets/img/hbc.jpg" class="p-5 d-block w-100"
+                alt="HBC Briones"></div>
+            <div class="col-3 alineado__vertical"><img src="assets/img/Ripley.png" class="p-5 d-block w-100"
+                alt="Ripley"></div>
+            <div class="col-3 alineado__vertical"><img src="assets/img/falabella.png" class="p-5 d-block w-100"
+                alt="Falabella"></div>
+            <div class="col-3 alineado__vertical"><img src="assets/img/asics.png" class="p-5 d-block w-100"
+                alt="ASICS Chile"></div>
+          </div>
+        </div>
+        <!-- SLIDE 2 -->
+      </div>
+    </div>
+    <!-- FIN CODIGO SLIDER -->
+  </section>
+
+  <!-- PORTAFOLIO -->
+  <section id="portafolio" class="container mt-2 mb-2">
+    <!-- ROW 1-->
+    <id class="row">
+      <!-- PROYECTO 1 -->
+      <div class="col-xl-6 col-md-6 mb-4 col-12">
+        <div class="card border-0 shadow">
+          <img src="assets/img/urock.jpg" class="card-img-top" alt="urock">
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">U'Rock Magazine</h5>
+            <div class="card-text text-black-50">Transmedia Design</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROYECTO 2 -->
+      <div class="col-xl-6 col-md-6 mb-4 col-12">
+        <div class="card border-0 shadow">
+          <img src="assets/img/urock.jpg" class="card-img-top" alt="Meet Coffee">
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">Meet Coffee</h5>
+            <div class="card-text text-black-50">Web Developer</div>
+          </div>
+        </div>
+      </div>
+    </id>
+
+     <!-- ROW 1-->
+     <id class="row">
+      <!-- PROYECTO 1 -->
+      <div class="col-xl-6 col-md-6 mb-4 col-12">
+        <div class="card border-0 shadow">
+          <img src="assets/img/urock.jpg" class="card-img-top" alt="urock">
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">U'Rock Magazine</h5>
+            <div class="card-text text-black-50">Transmedia Design</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROYECTO 2 -->
+      <div class="col-xl-6 col-md-6 mb-4 col-12">
+        <div class="card border-0 shadow">
+          <img src="assets/img/urock.jpg" class="card-img-top" alt="Meet Coffee">
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">Meet Coffee</h5>
+            <div class="card-text text-black-50">Web Developer</div>
+          </div>
+        </div>
+      </div>
+    </id>
+
+     <!-- ROW 1-->
+     <id class="row">
+      <!-- PROYECTO 1 -->
+      <div class="col-xl-6 col-md-6 mb-4 col-12">
+        <div class="card border-0 shadow">
+          <img src="assets/img/urock.jpg" class="card-img-top" alt="urock">
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">U'Rock Magazine</h5>
+            <div class="card-text text-black-50">Transmedia Design</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROYECTO 2 -->
+      <div class="col-xl-6 col-md-6 mb-4 col-12">
+        <div class="card border-0 shadow">
+          <img src="assets/img/urock.jpg" class="card-img-top" alt="Meet Coffee">
+          <div class="card-body text-center">
+            <h5 class="card-title mb-0">Meet Coffee</h5>
+            <div class="card-text text-black-50">Web Developer</div>
+          </div>
+        </div>
+      </div>
+    </id>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  </section>
+  <!-- FIN TRABAJOS -->
+
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="container my-3">
+    <div class="typeform-widget" data-url="https://rodrigo654817.typeform.com/to/R8ypEN"
+      style="width: 100%; height: 500px;"></div>
+    <script> (function () { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })() </script>
+  </section>
+  <!-- FIN CONTACTO -->
+
+
+
+  <!-- FOOTER -->
+  <footer id="footer" class="py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-3 col-md-6 p-0 m-0">
+          <a href="http://linkedin.com/in/rodrigovaldesletelier/"><i class="fab fa-linkedin-in fa-2x"></i></a>
+          <a href="https//www.behance.net/rodriqovaldes"><i class="fab fa-behance fa-2x"></i></a>
+          <a href="http://instagram.com/rodriqovaldes"><i class="fab fa-instagram fa-2x"></i></a>
+        </div>
+        <p class="col-12 col-md-6 p-0 m-0">© 2020 Rodrigo Valdés, Chile.</p>
+        </p>
+      </div>
+    </div>
+  </footer>
+  <!-- FIN FOOTER -->
+
+
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+    crossorigin="anonymous"></script>
+</body>
+
 </html>
