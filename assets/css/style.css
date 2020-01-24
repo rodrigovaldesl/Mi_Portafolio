@@ -21,6 +21,15 @@ nav img{
   height: 20px;
 }
 
+nav a {
+  transition: background-color .5s;
+}
+
+nav a:hover {
+  color: #ffa6bb!important;
+  transition: .5s;
+}
+
 /* HEADER */
 
 header {
@@ -70,6 +79,10 @@ header h1{
   font-family: 'Poppins', sans-serif;
 }
 
+header h1 span{
+  letter-spacing: 0rem!important;
+}
+
 header p{
   font-family: 'Lato', sans-serif!important;
   font-weight: 400!important;
@@ -78,6 +91,9 @@ header p{
   line-height: 2rem!important;
 }
 
+header p span{
+  letter-spacing: 0rem!important;
+}
 
 @media (pointer: coarse) and (hover: none) {
   header {
@@ -98,63 +114,157 @@ header p{
   }
 }
 
+/* SOBRE MI */
+#sobremi{
+  font-family: 'Lato', sans-serif;
+  background-color: rgba(30, 30, 30, 0.97);
+  height: 25rem;
+  display: flex;
+  align-items: center;
+}
+
+#sobremi h2{
+  font-weight: 800;
+  font-size: 2rem;
+}
+
+#sobremi p{
+  font-weight: 300;
+  font-size: 0.9rem;
+  padding-right: 10rem;
+  padding-left: 10rem;
+  line-height : 1.7rem;
+}
+
+
 /* EXPERIENCIA */
 #experiencia{
   font-family: 'Lato', sans-serif;
 }
 
-#experiencia h2{
-  font-weight: 800;
-  font-size: 2rem;
+#experiencia img{
+  height: 90px;
+  width: 90px;
+  opacity: 0.85;
+  filter: alpha(opacity=85); /* For IE8 and earlier */
+}
+
+#experiencia h4{
+  font-weight: 900;
+  font-size: 16px;
+  letter-spacing: 0.2rem;
+}
+
+#experiencia h6{
+  font-weight: 400;
 }
 
 #experiencia p{
   font-weight: 300;
-  font-size: 0.9rem;
+  font-size: 16px;
 }
 
-
-/* CV */
-#cv{
+/* CLIENTES */
+#clientes h5{
   font-family: 'Lato', sans-serif;
+  font-weight: 300!important;
+  font-size: 1.5rem!important;
+  letter-spacing: 0.3rem!important;
 }
+
 
 /* SLIDER */
-.carousel-indicators {
-  bottom: -500px;
-}
-
 .carousel-indicators .active {
-  background-color: black;
+  background-color: rgba(0, 0, 0, 70%)!important;
 }
 
 .carousel-indicators li {
-  width: 10px !important;
-  height: 10px !important;
-  border-radius: 50%;
-  background-color: rgba(0, 0, 0, 50%)
+  background-color: rgba(0, 0, 0, 20%)!important;
 }
 
-.alineado__vertical{
-  display: flex;
-  align-items: center;
+.carousel-indicators li {
+  width: 0.5rem !important;
+  height: 0.5rem !important;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 20%)
+}
+
+/* PORTAFOLIO */
+#portafolio h6{
+  font-family: 'Lato', sans-serif;
+}
+
+#portafolio p{
+  font-family: 'Lato', sans-serif
+}
+
+.gallery-block{
+	padding-bottom: 60px;
+	padding-top: 60px;
+}
+
+.gallery-block.cards-gallery .card{
+  transition: 0.4s ease; 
+}
+
+.gallery-block.cards-gallery .card img {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15); 
+}
+
+.gallery-block.cards-gallery .card-body {
+  text-align: center; 
+}
+
+.gallery-block.cards-gallery a {
+  color: #212529; 
+}
+
+.gallery-block.cards-gallery a:hover {
+  text-decoration: none; 
+}
+
+.gallery-block.cards-gallery .card {
+  margin-bottom: 30px; 
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 576px) {
+
+	.gallery-block .transform-on-hover:hover {
+	    transform: translateY(-10px) scale(1.02);
+	    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15) !important; 
+	}
 }
 
 /* FOOTER */
 footer{
-  background-color: rgba(30, 30, 30, 0.97);
   font-family: 'Lato', sans-serif;
   font-size: 0.9rem;
   font-weight: 400;
   text-align: center;
 }
 
-footer i{
-  color: #777777;
+footer p{
+  margin: 0rem;
 }
 
-footer p{
-  color: #777777;
-  margin: 0rem;
-  letter-spacing: 0.07rem!important;
+footer a i:hover {
+  color: #ffa6bb!important;
+  transition: color .5s;
+}
+
+/* DESTACADO */
+::selection {
+  background: #ffa6bb;
+}
+
+/* FIREFOX */
+::-moz-selection {
+  background: #ffa6bb;
+}
+
+/* ALINEADO */
+.alineado__vertical{
+  display: flex;
+  align-items: center;
 }

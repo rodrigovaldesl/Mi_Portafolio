@@ -11,6 +11,9 @@
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <!-- Shadow Box CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.css" />
   <!-- Tipografías -->
   <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,700,800,900&display=swap" rel="stylesheet">
@@ -22,10 +25,10 @@
 </head>
 
 <body>
-  <!-- NAV BAR -->
-  <nav id="barra" class="navbar navbar-expand-lg navbar-light bg-light sticky-top text-uppercase">
+  <!-- NAVBAR -->
+  <nav id="" class="navbar navbar-expand-lg navbar-light bg-light sticky-top text-uppercase">
     <div class="container">
-      <a class="navbar-brand" href="#barra"><img class="" src="assets/img/logo.png" alt="Home"></a>
+      <a class="navbar-brand" href="#header"><img class="" src="assets/img/logo.png" alt="Home"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -33,7 +36,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link mr-3" href="#hola">Sobre Mi<span class="sr-only">(current)</span></a>
+            <a class="nav-link mr-3" href="#sobremi">Sobre Mi<span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
             <a class="nav-link mx-3" href="#experiencia">Experiencia</a>
@@ -48,9 +51,10 @@
       </div>
     </div>
   </nav>
+  <!-- NAVBAR END-->
 
   <!-- HEADER -->
-  <header>
+  <header id="header">
     <div class="overlay"></div>
     <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
       <source src="assets/img/video.mp4" type="video/mp4">
@@ -58,80 +62,110 @@
     <div class="container h-100">
       <div class="d-flex h-100 text-center align-items-center">
         <div class="w-100 text-white">
-          <h1 class="display-3 text-uppercase d-none d-sm-none d-md-block">Rodrigo</h1>
-          <p class="lead mb-0 text-uppercase d-none d-sm-none d-md-block">Diseño / Moda / Medios</p>
+          <h1 class="display-3 text-uppercase d-none d-sm-none d-md-block">rodrig<span>o</span></h1>
+          <p class="lead mb-0 text-uppercase d-none d-sm-none d-md-block">Diseño | Moda | Medio<span>s</span></p>
         </div>
       </div>
     </div>
   </header>
+  <!-- HEADER END-->
 
-  <!-- EXPERIENCIA -->
-  <section id="experiencia" class="container my-5">
-    <h2>Rodrigo</h2>
-    <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit dolores, repellat soluta
-      voluptatibus tempore mollitia doloribus accusantium maxime eos minima voluptas ipsam sapiente quaerat ullam.
-      Dolore culpa soluta ducimus quam? Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur
-      atque
-      aliquam iste rem magnam velit aliquid tempore fuga, nemo tenetur maxime cum maiores, repellat architecto
-      nihil
-      qui. Deleniti, aperiam! Cum.</p>
-  </section>
-
-  <!-- CV -->
-  <section id="cv" class="text-center">
-    <div class="container px-xl-0">
-      <div class="row justify-content-center">
-        <div class="col-xl-10">
-          <div class="row justify-content-center">
-
-            <div class="col-md-4 mb-50">
-              <i class="fas fa-desktop f-60 action-3"></i>
-              <div class="mt-20 mb-25 f-22 title">2018</div>
-              <p class="">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-
-            </div>
-
-
-            <div class="col-md-4 mb-50">
-              <i class="fas fa-desktop f-60 action-3"></i>
-              <div class="mt-20 mb-25 f-22 title">2018</div>
-              <p class="">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-
-            </div>
-
-            <div class="col-md-4 mb-50">
-              <i class="fas fa-desktop f-60 action-3"></i>
-              <div class="mt-20 mb-25 f-22 title">2018</div>
-              <p class="">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.</p>
-
-            </div>
-          </div>
-        </div>
+  <!-- SOBRE MI -->
+  <section id="sobremi">
+    <div class="container">
+      <div class="row">
+        <h2>Hola, soy Rodrigo!</h2>
+        <p class="text-light col-12 m-0 text-justify">Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit.
+          Assumenda nam aliquid dolores iure. Earum quis veniam ad? Asperiores, vero fugit error temporibus accusantium
+          ab nulla, a deserunt, tenetur est omnis?</p>
       </div>
     </div>
   </section>
+  <!-- SOBRE MI END -->
 
+  <!-- EXPERIENCIA ESTUDIOS -->
+  <section id="experiencia" class="container text-center py-5 d-none d-sm-none d-md-block">
+    <div class="row">
 
+      <div class="col-md-4 col-12 my-4">
+        <img class="mb-3" src="assets/img/student.svg" alt="">
+        <h4 class="mb-2 text-uppercase">Universidad de Chile</h4>
+        <h6 class="mb-2 text-dark">2011-2017</h6>
+        <p class="text-muted m-0">Diseñador Gráfico <br> Titulado con Distinción</p>
+      </div>
 
+      <div class="col-md-4 col-12 my-4">
+        <img class="mb-3" src="assets/img/student.svg" alt="">
+        <h4 class="mb-2 text-uppercase">Antalis Lab</h4>
+        <h6 class="mb-2 text-dark">2016</h6>
+        <p class="text-muted m-0">Adobe Muse <br> Creación de Sitios Web</p>
+      </div>
 
+      <div class="col-md-4 col-12 my-4">
+        <img class="mb-3" src="assets/img/me.svg" alt="">
+        <h4 class="text-uppercase mb-2">Desafio Latam</h4>
+        <h6 class="mb-2 text-dark">2020</h6>
+        <p class="text-muted m-0">Diseño UX/UI <br> Beca Talento Digital</p>
+      </div>
 
+    </div>
+  </section>
+  <!-- EXPERIENCIA END -->
 
-  <!-- SLIDER -->
-  <section class="container d-none d-sm-none d-md-block">
+  <div class="container d-none d-sm-none d-md-block">
+    <hr class="m-0">
+  </div>
+
+  <!-- EXPERIENCIA LABORAL -->
+  <section id="experiencia" class="container text-center py-5">
+    <div class="row">
+
+      <div class="col-md-4 col-12 my-4">
+        <img class="mb-3" src="assets/img/student.svg" alt="">
+        <h4 class="mb-2 text-uppercase">Universidad de Chile</h4>
+        <h6 class="mb-2 text-dark">2011-2017</h6>
+        <p class="text-muted m-0">Diseñador Gráfico <br> Titulado con Distinción</p>
+      </div>
+
+      <div class="col-md-4 col-12 my-4">
+        <img class="mb-3" src="assets/img/student.svg" alt="">
+        <h4 class="mb-2 text-uppercase">Antalis Lab</h4>
+        <h6 class="mb-2 text-dark">2016</h6>
+        <p class="text-muted m-0">Adobe Muse <br> Creación de Sitios Web</p>
+      </div>
+
+      <div class="col-md-4 col-12 my-4">
+        <img class="mb-3" src="assets/img/me.svg" alt="">
+        <h4 class="text-uppercase mb-2">Desafio Latam</h4>
+        <h6 class="mb-2 text-dark">2020</h6>
+        <p class="text-muted m-0">Diseño UX/UI <br> Beca Talento Digital</p>
+      </div>
+
+    </div>
+  </section>
+  <!-- EXPERIENCIA END -->
+
+  <div class="container d-none d-sm-none d-md-block">
+    <hr class="m-0">
+  </div>
+
+  <!-- CLIENTES -->
+  <section id="clientes" class="container d-none d-sm-none d-md-block text-center pt-5 pb-3">
+    <h5 class="mb-4 text-uppercase">Clientes <span class="font-weight-bold">Felices</span></h5>
+
     <!-- CODIGO SLIDER -->
-    <div id="carouselExampleIndicators" class="carousel slide my-5" data-ride="carousel">
-      <!-- <ol class="carousel-indicators">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
         <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
         <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-      </ol> -->
+      </ol>
       <div class="carousel-inner">
+
         <!-- SLIDE 1 -->
         <div class="carousel-item active">
           <div class="row">
-            <div class="col-3 alineado__vertical "><img src="assets/img/sml.png" class="p-5 d-block w-100"
+            <div class="col-3 alineado__vertical"><img src="assets/img/sml.png" class="p-5 d-block w-100"
                 alt="Revista SML"></div>
             <div class="col-3 alineado__vertical"><img src="assets/img/Ripley.png" class="p-5 d-block w-100"
                 alt="Ripley"></div>
@@ -141,11 +175,11 @@
                 alt="ASICS Chile"></div>
           </div>
         </div>
-        <!-- SLIDE 1 -->
+
         <!-- SLIDE 2 -->
         <div class="carousel-item">
           <div class="row">
-            <div class="col-3 alineado__vertical "><img src="assets/img/sml.png" class="p-5 d-block w-100"
+            <div class="col-3 alineado__vertical"><img src="assets/img/sml.png" class="p-5 d-block w-100"
                 alt="HBC Briones"></div>
             <div class="col-3 alineado__vertical"><img src="assets/img/Ripley.png" class="p-5 d-block w-100"
                 alt="Ripley"></div>
@@ -155,121 +189,113 @@
                 alt="ASICS Chile"></div>
           </div>
         </div>
-        <!-- SLIDE 2 -->
+
       </div>
     </div>
     <!-- FIN CODIGO SLIDER -->
   </section>
+  <!-- CLIENTES END-->
 
   <!-- PORTAFOLIO -->
-  <section id="portafolio" class="bg-light mt-2 mb-2">
-    <div class="container py-5">
-      <!-- ROW 1-->
-      <id class="row">
-        <!-- PROYECTO 1 -->
+  <section id="portafolio" class="bg-light gallery-block cards-gallery pt-5">
+    <div class="container">
+      <div class="row mt-5">
         <div class="col-xl-6 col-md-6 mb-4 col-12">
-          <div class="card border-0 shadow">
-            <img src="assets/img/urock.jpg" class="card-img-top" alt="urock">
-            <div class="card-body text-center">
-              <h5 class="card-title mb-0">U'Rock Magazine</h5>
-              <div class="card-text text-black-50">Transmedia Design</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- PROYECTO 2 -->
-        <div class="col-xl-6 col-md-6 mb-4 col-12">
-          <div class="card border-0 shadow">
-            <img src="assets/img/urock.jpg" class="card-img-top" alt="Meet Coffee">
+          <div class="card border-0 shadow transform-on-hover">
+            <a class="lightbox" href="assets/img/urock.jpg">
+              <img src="assets/img/urock.jpg" class="card-img-top" alt="Meet Coffee">
+            </a>
             <div class="card-body text-center">
               <h5 class="card-title mb-0">Meet Coffee</h5>
-              <div class="card-text text-black-50">Web Developer</div>
+              <p class="card-text text-black-50">Web Developer</p>
             </div>
           </div>
         </div>
-      </id>
-
-      <!-- ROW 1-->
-      <id class="row">
-        <!-- PROYECTO 1 -->
         <div class="col-xl-6 col-md-6 mb-4 col-12">
-          <div class="card border-0 shadow">
-            <img src="assets/img/urock.jpg" class="card-img-top" alt="urock">
-            <div class="card-body text-center">
-              <h5 class="card-title mb-0">U'Rock Magazine</h5>
-              <div class="card-text text-black-50">Transmedia Design</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- PROYECTO 2 -->
-        <div class="col-xl-6 col-md-6 mb-4 col-12">
-          <div class="card border-0 shadow">
-            <img src="assets/img/urock.jpg" class="card-img-top" alt="Meet Coffee">
+          <div class="card border-0 shadow transform-on-hover">
+            <a class="lightbox" href="assets/img/urock.jpg">
+              <img src="assets/img/urock.jpg" class="card-img-top" alt="Meet Coffee">
+            </a>
             <div class="card-body text-center">
               <h5 class="card-title mb-0">Meet Coffee</h5>
-              <div class="card-text text-black-50">Web Developer</div>
+              <p class="card-text text-black-50">Web Developer</p>
             </div>
           </div>
         </div>
-      </id>
-
-      <!-- ROW 1-->
-      <id class="row">
-        <!-- PROYECTO 1 -->
+      </div>
+      <div class="row">
         <div class="col-xl-6 col-md-6 mb-4 col-12">
-          <div class="card border-0 shadow">
-            <img src="assets/img/urock.jpg" class="card-img-top" alt="urock">
-            <div class="card-body text-center">
-              <h5 class="card-title mb-0">U'Rock Magazine</h5>
-              <div class="card-text text-black-50">Transmedia Design</div>
-            </div>
-          </div>
-        </div>
-
-        <!-- PROYECTO 2 -->
-        <div class="col-xl-6 col-md-6 mb-4 col-12">
-          <div class="card border-0 shadow">
-            <img src="assets/img/urock.jpg" class="card-img-top" alt="Meet Coffee">
+          <div class="card border-0 shadow transform-on-hover">
+            <a class="lightbox" href="assets/img/urock.jpg">
+              <img src="assets/img/urock.jpg" class="card-img-top" alt="Meet Coffee">
+            </a>
             <div class="card-body text-center">
               <h5 class="card-title mb-0">Meet Coffee</h5>
-              <div class="card-text text-black-50">Web Developer</div>
+              <p class="card-text text-black-50">Web Developer</p>
             </div>
           </div>
         </div>
-      </id>
-
-
-
-
-
-
-
-
-
-
-
-
+        <div class="col-xl-6 col-md-6 mb-4 col-12">
+          <div class="card border-0 shadow transform-on-hover">
+            <a class="lightbox" href="assets/img/urock.jpg">
+              <img src="assets/img/urock.jpg" class="card-img-top" alt="Meet Coffee">
+            </a>
+            <div class="card-body text-center">
+              <h5 class="card-title mb-0">Meet Coffee</h5>
+              <p class="card-text text-black-50">Web Developer</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-6 col-md-6 mb-4 col-12">
+          <div class="card border-0 shadow transform-on-hover">
+            <a class="lightbox" href="assets/img/urock.jpg">
+              <img src="assets/img/urock.jpg" class="card-img-top" alt="Meet Coffee">
+            </a>
+            <div class="card-body text-center">
+              <h5 class="card-title mb-0">Meet Coffee</h5>
+              <p class="card-text text-black-50">Web Developer</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-6 col-md-6 mb-4 col-12">
+          <div class="card border-0 shadow transform-on-hover">
+            <a class="lightbox" href="assets/img/urock.jpg">
+              <img src="assets/img/urock.jpg" class="card-img-top" alt="Meet Coffee">
+            </a>
+            <div class="card-body text-center">
+              <h5 class="card-title mb-0">Meet Coffee</h5>
+              <p class="card-text text-black-50">Web Developer</p>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
+  <!-- PORTAFOLIO END -->
 
   <!-- CONTACTO -->
-  <section id="contacto" class="container my-3">
+  <section id="contacto" class="my-3">
     <div class="typeform-widget" data-url="https://rodrigo654817.typeform.com/to/UswhjM"
       style="width: 100%; height: 500px;"></div>
     <script> (function () { var qs, js, q, s, d = document, gi = d.getElementById, ce = d.createElement, gt = d.getElementsByTagName, id = "typef_orm", b = "https://embed.typeform.com/"; if (!gi.call(d, id)) { js = ce.call(d, "script"); js.id = id; js.src = b + "embed.js"; q = gt.call(d, "script")[0]; q.parentNode.insertBefore(js, q) } })() </script>
   </section>
+  <!-- CONTACTO END-->
 
   <!-- FOOTER -->
-  <footer>
+  <footer class="bg-light">
     <div class="container">
-      <div class="pt-4 mb-2">
-        <a href="http://www.behance.net/rodriqovaldes"><i class="fab fa-behance fa-2x mr-1"></i></a>
-        <a href="http://www.linkedin.com/in/rodrigovaldesletelier/"><i class="fab fa-linkedin-in fa-2x ml-1"></i></a>
+      <div class="pt-5 mb-4">
+        <a href="http://www.behance.net/rodriqovaldes" data-toggle="tooltip" data-placement="left"
+          title="Mi Portafolio"><i class="text-dark fab fa-behance fa-2x ml-1 mr-2"></i></a>
+        <a href="http://www.linkedin.com/in/rodrigovaldesletelier/" data-toggle="tooltip" data-placement="right"
+          title="Mi CV"><i class="text-dark fab fa-linkedin-in fa-2x mr-1 ml-2"></i></a>
       </div>
-      <p class="pb-3">© 2020 Rodrigo Valdés, Chile.</p>
+      <p class="pb-4">© 2020 Rodrigo Valdés, Chile.</p>
     </div>
   </footer>
+  <!-- FOOTER -->
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -282,6 +308,17 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
+  <!-- Shadow Box -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/baguettebox.js/1.10.0/baguetteBox.min.js"></script>
+  <script>
+    baguetteBox.run('.cards-gallery', { animation: 'slideIn' });
+  </script>
+  <!-- Tooltip -->
+  <script>
+    $(function () {
+      $('[data-toggle="tooltip"]').tooltip()
+    })
+  </script>
 </body>
 
 </html>
