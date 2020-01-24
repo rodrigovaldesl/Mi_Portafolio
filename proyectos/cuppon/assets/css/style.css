@@ -1,0 +1,44 @@
+body{
+  color: #373A3C;
+  font-family: 'Roboto', sans-serif;
+}
+
+.imagen__logo{
+  width: auto;
+  height: 30px;
+}
+
+/* FOOTER */
+
+.logo__footer{
+  width: auto;
+  height: 24px;
+}
+
+
+/* OTRAS CLASES */
+
+.texto__300{
+  font-weight: 300;
+}
+
+.texto__500{
+  font-weight: 500;
+}
+
+.margen__0{
+  margin: 0rem;
+}
+
+.texto__span{
+  font-size: 1.3rem;
+  font-weight: 500;
+}
+
+.texto__direccion{
+  font-size: 0.8rem;
+}
+
+.gris__claro{
+  color: #707070;
+}

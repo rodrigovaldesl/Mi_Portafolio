@@ -1,0 +1,74 @@
+body{
+  color: #373A3C;
+  font-family: 'Open Sans', sans-serif;
+}
+
+/* NAVBAR */
+.fondo__navbar{
+  background-color: #E83E8C!important;
+}
+
+.imagen__logo{
+  width: auto;
+  height: 53px;
+}
+
+/* METODOS DE PAGO */
+#pago{
+  background-color: #17A2B8;
+  padding: 4rem 0rem;
+  text-align: center;
+}
+
+#pago h2{
+  margin: 0rem;
+  color: white;
+  margin-right: 50px;
+}
+
+#pago i{
+  color: white;
+  margin-left: 2rem;
+}
+
+.metodos__texto, .metodos__iconos{
+  display: inline-block;
+}
+
+/* FOOTER */
+footer{
+  background-color:#E83E8C;
+  text-align: center;
+}
+
+.logo__footer{
+  width: auto;
+  height: 100px;
+}
+
+/* SMALL DEVICES */
+@media (min-width: 576px) {
+  .divmedia{background-color: red;}
+}
+/* MEDIUM DEVICES */
+@media (min-width: 768px) {
+  .divmedia{
+    background-color: yellow;
+  }
+}
+/* LARGE DEVICES */
+@media (min-width: 992px) {
+  .divmedia{
+    background-color: green;
+  }
+}
+/* EXTRA LARGE DEVICES */
+@media (min-width: 1200px) {
+  .divmedia{
+    background-color: black;
+  }
+} 
+
+.titulo__700{
+  font-weight: 700;
+}
