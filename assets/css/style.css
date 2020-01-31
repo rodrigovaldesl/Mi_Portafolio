@@ -1,23 +1,276 @@
-/*
-Errno::ENOENT: No such file or directory @ rb_sysopen - assets/sass/main.scss
+body{
+    margin: 0rem;
+    padding: 0rem;
+    border: 0rem;
+}
 
-Backtrace:
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:454:in `read'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:454:in `update_stylesheet'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:294:in `watch'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/plugin.rb:109:in `method_missing'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:358:in `watch_or_update'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:51:in `process_result'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.4/bin/sass:13:in `<top (required)>'
-/usr/local/bin/sass:22:in `load'
-/usr/local/bin/sass:22:in `<main>'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Errno::ENOENT: No such file or directory @ rb_sysopen - assets/sass/main.scss"; }
+html{
+  scroll-behavior: smooth;
+}
+
+/* NAV BAR */
+nav{
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 0.75rem;
+  letter-spacing: 0.09rem;
+}
+
+nav img{
+  width: auto;
+  height: 20px;
+}
+
+nav a {
+  transition: background-color .5s;
+}
+
+nav a:hover {
+  color: #ffa6bb!important;
+  transition: .5s;
+}
+
+/* HEADER */
+
+header {
+  position: relative;
+  background-color: black;
+  height: 100vh;
+  min-height: 25rem;
+  width: 100%;
+  overflow: hidden;
+}
+
+header video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+header .container {
+  position: relative;
+  z-index: 2;
+}
+
+header .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+
+header h1{
+  font-weight: 700!important;
+  font-size: 3rem!important;
+  letter-spacing: 3rem!important;
+  font-family: 'Poppins', sans-serif;
+}
+
+header h1 span{
+  letter-spacing: 0rem!important;
+}
+
+header p{
+  font-family: 'Lato', sans-serif!important;
+  font-weight: 400!important;
+  font-size: 0.75rem!important;
+  letter-spacing: 1rem!important;
+  line-height: 2rem!important;
+}
+
+header p span{
+  letter-spacing: 0rem!important;
+}
+
+@media (pointer: coarse) and (hover: none) {
+  header {
+    background: url(../img/bg-header.jpg) black no-repeat center center scroll;
+    height: 100vh;
+   
+  }
+  header video {
+    display: none;
+  }
+
+  header p{
+    font-family: 'Lato', sans-serif!important;
+    font-weight: 400!important;
+    font-size: 2rem!important;
+    letter-spacing: 1rem!important;
+    line-height: 3rem!important;
+  }
+}
+
+/* SOBRE MI */
+#sobremi{
+  font-family: 'Lato', sans-serif;
+  background-color: rgba(30, 30, 30, 0.97);
+  padding: 200px 0px;
+}
+
+#sobremi h5{
+  font-family: 'Lato', sans-serif;
+  font-weight: 300!important;
+  font-size: 1.5rem!important;
+  letter-spacing: 0.3rem!important;
+}
+
+#sobremi p{
+  font-weight: 300;
+  font-size: 0.9rem;
+  line-height : 1.7rem;
+}
+
+/* EXPERIENCIA */
+#experiencia{
+  font-family: 'Lato', sans-serif;
+}
+
+#experiencia img{
+  height: 80px;
+  width: 80px;
+  opacity: 0.85;
+  filter: alpha(opacity=85); /* For IE8 and earlier */
+}
+
+#experiencia h4{
+  font-weight: 900;
+  font-size: 16px;
+  letter-spacing: 0.2rem;
+}
+
+#experiencia h6{
+  font-weight: 400;
+}
+
+#experiencia p{
+  font-weight: 300;
+  font-size: 16px;
+}
+
+/* CLIENTES */
+.carousel-item{
+  width: auto;
+  height: 200px;
+}
+
+#clientes h5{
+  font-family: 'Lato', sans-serif;
+  font-weight: 300!important;
+  font-size: 1.5rem!important;
+  letter-spacing: 0.3rem!important;
+}
+
+/* SLIDER */
+.carousel-indicators .active {
+  background-color: rgba(0, 0, 0, 70%)!important;
+}
+
+.carousel-indicators li {
+  background-color: rgba(0, 0, 0, 20%)!important;
+}
+
+.carousel-indicators li {
+  width: 0.5rem !important;
+  height: 0.5rem !important;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 20%)
+}
+
+/* PORTAFOLIO */
+#portafolio h5{
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase!important;
+  font-size: 17px;
+  letter-spacing: 0.1rem!important;
+  font-weight: 800;
+}
+
+#portafolio p{
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+
+.gallery-block{
+	padding-bottom: 60px;
+	padding-top: 60px;
+}
+
+.gallery-block.cards-gallery .card{
+  transition: 0.4s ease; 
+}
+
+.gallery-block.cards-gallery .card img {
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15); 
+}
+
+.gallery-block.cards-gallery .card-body {
+  text-align: center; 
+}
+
+.gallery-block.cards-gallery a {
+  color: #212529; 
+}
+
+.gallery-block.cards-gallery a:hover {
+  text-decoration: none; 
+}
+
+.gallery-block.cards-gallery .card {
+  margin-bottom: 30px; 
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+@media (min-width: 576px) {
+
+	.gallery-block .transform-on-hover:hover {
+	    transform: translateY(-10px) scale(1.02);
+	    box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.15) !important; 
+	}
+}
+
+/* FOOTER */
+footer{
+  font-family: 'Lato', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+footer p{
+  margin: 0rem;
+}
+
+footer a i:hover {
+  color: #ffa6bb!important;
+  transition: color .5s;
+}
+
+/* DESTACADO */
+::selection {
+  background: #ffa6bb;
+}
+
+/* FIREFOX */
+::-moz-selection {
+  background: #ffa6bb;
+}
+
+/* ALINEADO */
+.alineado__vertical{
+  display: flex;
+  align-items: center;
+}
