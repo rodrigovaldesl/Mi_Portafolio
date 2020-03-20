@@ -126,14 +126,27 @@ header p span{
   font-weight: 300!important;
   font-size: 1.5rem!important;
   letter-spacing: 0.3rem!important;
+  padding: 0 200px;
+  text-align: center;
 }
 
 #sobremi p{
+  padding: 0 200px;
   font-weight: 300;
   font-size: 0.9rem;
-  line-height : 1.7rem;
+  line-height : 1.8rem;
+  letter-spacing: 0.1rem
 }
 
+@media (max-width: 576px) { 
+  #sobremi h5{
+    padding: 0 0;
+  }
+  
+  #sobremi p{
+    padding: 0 0;
+  }
+}
 /* EXPERIENCIA */
 #experiencia{
   font-family: 'Lato', sans-serif;
